@@ -1,3 +1,4 @@
+#!/usr/bin/python -tt
 """Functions for processing data in Assignment 7
 
     * get_random_matrix - returns an NxM Numpy matrix of random (0,1] values
@@ -7,7 +8,7 @@ import numpy as np
 
 
 def get_random_matrix(num_rows, num_columns):
-    """Returns an NxM Numpy matrix of random (0,1] values.
+	"""Returns an NxM Numpy matrix of random (0,1] values.
 
     Parameters
     ----------
@@ -32,7 +33,25 @@ def get_random_matrix(num_rows, num_columns):
 
 
 def get_file_dimensions(file_name):
-	return (0,0)
+	"""Takes the name of a CSV file, reads it, and returns the dimensions of
+	the tabulated data within.
+
+    Parameters
+    ----------
+    file_name : str
+		The name of the file to read data from
+
+    Returns
+    -------
+    file.shape : tuple
+        The dimensions of the tabular data in the CSV file
+
+    """
+	if type(file_name) != str:  # Catch inappropriate input types
+		raise TypeError('File name must be a string of characters.')
+
+	file = np.genfromtxt(file_name, delimiter=',')
+	return file.shape
 
 
 def write_matrix_to_file(num_rows, num_columns, file_name):
