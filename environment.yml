@@ -2,69 +2,69 @@ name: swe4s
 channels:
   - defaults
 dependencies:
+  - autopep8=1.6.0
+  - blas=1.0
   - brotli=1.0.9
   - brotli-bin=1.0.9
   - bzip2=1.0.8
-  - ca-certificates=2022.9.24
-  - certifi=2022.9.24
+  - ca-certificates=2022.07.19
   - cycler=0.11.0
-  - freetype=2.12.1
-  - gettext=0.21.1
+  - fonttools=4.25.0
+  - freetype=2.11.0
+  - giflib=5.2.1
+  - intel-openmp=2021.4.0
   - jpeg=9e
   - lcms2=2.12
-  - lerc=4.0.0
-  - libblas=3.9.0
+  - lerc=3.0
   - libbrotlicommon=1.0.9
   - libbrotlidec=1.0.9
   - libbrotlienc=1.0.9
-  - libcblas=3.9.0
   - libcxx=14.0.6
-  - libdeflate=1.14
-  - libffi=3.4.2
-  - libiconv=1.17
-  - libidn2=2.3.3
-  - liblapack=3.9.0
-  - libopenblas=0.3.21
-  - libpng=1.6.38
-  - libsqlite=3.39.4
+  - libdeflate=1.8
+  - libffi=3.3
+  - libpng=1.6.37
   - libtiff=4.4.0
-  - libunistring=0.9.10
+  - libwebp=1.2.4
   - libwebp-base=1.2.4
-  - libxcb=1.13
-  - libzlib=1.2.13
-  - llvm-openmp=14.0.4
-  - matplotlib-base=3.6.1
+  - lz4-c=1.9.3
+  - matplotlib-base=3.5.2
+  - mkl=2021.4.0
+  - mkl_fft=1.3.1
+  - mkl_random=1.2.2
   - munkres=1.1.4
   - ncurses=6.3
-  - openjpeg=2.5.0
-  - openssl=3.0.5
+  - numpy-base=1.23.3
+  - openssl=1.1.1q
   - packaging=21.3
-  - pip=22.2.2
-  - pthread-stubs=0.4
-  - pycodestyle=2.9.1
-  - pyparsing=3.0.9
+  - pip==22.2.2
+  - pycodestyle=2.8.0
   - python=3.10.6
   - python-dateutil=2.8.2
-  - python_abi=3.10
   - readline=8.1.2
-  - setuptools=65.4.1
   - six=1.16.0
+  - sqlite=3.39.3
   - tk=8.6.12
-  - tzdata=2022d
-  - wget=1.20.3
+  - toml=0.10.2
+  - tzdata=2022e
   - wheel=0.37.1
-  - xorg-libxau=1.0.9
-  - xorg-libxdmcp=1.1.3
   - xz=5.2.6
-  - zlib=1.2.13
+  - zlib=1.2.12
   - zstd=1.5.2
   - pip:
-    - contourpy==1.0.5
-    - fonttools==4.37.4
-    - kiwisolver==1.4.4
-    - matplotlib==3.6.1
+    - bottleneck==1.3.5
+    - certifi==2022.9.24
+    - kiwisolver==1.4.2
+    - matplotlib==3.5.2
+    - mkl-fft==1.3.1
+    - mkl-random==1.2.2
+    - mkl-service==2.4.0
+    - numexpr==2.8.3
     - numpy==1.23.3
+    - pandas==1.4.4
     - pillow==9.2.0
+    - pip=22.2.2
+    - pyparsing==3.0.9
+    - pytz==2022.1
+    - setuptools==63.4.1
     - tornado==6.2
-    - unicodedata2==14.0.0
 prefix: /opt/anaconda3/envs/swe4s
