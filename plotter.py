@@ -35,6 +35,6 @@ for i in range(2):
 for figs in [fig, fig2, fig3]:
     figs.tight_layout()
 
-fig.savefig('iris_boxplot.png', dpi=200)
-fig2.savefig('petal_width_v_length_scatter.png', dpi=200)
-fig3.savefig('multi_panel_figure.png', dpi=200)
+fig.savefig('iris_boxplot.png')
+fig2.savefig('petal_width_v_length_scatter.png')
+fig3.savefig('multi_panel_figure.png')
