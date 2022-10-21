@@ -15,7 +15,9 @@ jobs:
         with:
           activate-environment: swe4s
           environment-file: environment.yml
-      - run: python3 test_data_processor.py
+      - run: |
+          pip install numpy
+          python3 test_data_processor.py
   run_style_check:
     runs-on: ubuntu-latest
     defaults:
