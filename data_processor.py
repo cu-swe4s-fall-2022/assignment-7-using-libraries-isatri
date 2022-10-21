@@ -51,8 +51,13 @@ def get_file_dimensions(file_name):
     if type(file_name) != str:  # Catch inappropriate input types
         raise TypeError('File name must be a string of characters.')
 
-    file = np.genfromtxt(file_name, delimiter=',')
-    return file.shape
+    try:
+        file = np.genfromtxt(file_name, delimiter=',')
+        return file.shape
+    except FileNotFoundError:
+        raise FileNotFoundError("File '%s' could not be found." % file_name)
+    except PermissionError:
+        raise PermissionError("Permission denied for '%s'." % file_name)
 
 
 def write_matrix_to_file(num_rows, num_columns, file_name):

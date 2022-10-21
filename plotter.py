@@ -20,9 +20,10 @@ def main():
     fig3, ax3 = plt.subplots(1, 2, figsize=(9, 4))  # combination
 
     for axs in [ax1, ax3[0]]:
-        axs.boxplot(data.iloc[:, :4])
+        col_subset = data.columns[:4]
+        axs.boxplot(data[col_subset])
         axs.set(ylabel='[cm]',
-                xticklabels=data.columns[:4])
+                xticklabels=col_subset)
 
     for axs in [ax2, ax3[1]]:
         for species_name in data['iris_species'].unique()[::-1]:
