@@ -39,5 +39,4 @@ jobs:
         with:
           activate-environment: swe4s
           environment-file: environment.yml
-      - run: |
-          bash test_plotter.sh
+      - run: bash test_plotter.sh
