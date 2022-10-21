@@ -34,6 +34,7 @@ dependencies:
   - munkres=1.1.4
   - ncurses=6.3
   - numpy-base=1.23.3
+  - numpy==1.23.3
   - openssl=1.1.1q
   - packaging=21.3
   - pip==22.2.2
@@ -59,7 +60,6 @@ dependencies:
     - mkl-random==1.2.2
     - mkl-service==2.4.0
     - numexpr==2.8.3
-    - numpy==1.23.3
     - pandas==1.4.4
     - pillow==9.2.0
     - pyparsing==3.0.9
