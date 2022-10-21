@@ -38,7 +38,7 @@ dependencies:
   - packaging=21.3
   - pip==22.2.2
   - pycodestyle=2.8.0
-  - python=3.10.6
+  - python=3.10.0
   - python-dateutil=2.8.2
   - readline=8.1.2
   - six=1.16.0
@@ -59,7 +59,7 @@ dependencies:
     - mkl-random==1.2.2
     - mkl-service==2.4.0
     - numexpr==2.8.3
-    - numpy==1.23.4
+    - numpy==1.23.3
     - pandas==1.4.4
     - pillow==9.2.0
     - pyparsing==3.0.9
